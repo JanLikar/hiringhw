@@ -14,11 +14,6 @@ spec:
   values:
     image:
       tag: 6.4.3 # {"$imagepolicy": "flux-system:wordpress:tag"}
-    wordpressUsername: admin
-    wordpressPassword: ChangeMe
-    mariadb:
-      auth:
-        rootPassword: ChangeMe
     service:
       type: NodePort
   interval: 1m0s
