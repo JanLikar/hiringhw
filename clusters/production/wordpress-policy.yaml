@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: wordpress
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: wordpress
+  policy:
+    semver:
+      range: 6.4.x
